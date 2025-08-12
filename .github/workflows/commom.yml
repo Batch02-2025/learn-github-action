@@ -1,0 +1,8 @@
+name: common test
+on: [workflow_call]
+jobs:
+  # Sequential Jobs
+  test1:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "One common Task"

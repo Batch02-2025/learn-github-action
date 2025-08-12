@@ -1,0 +1,7 @@
+name: Example Workflow 1
+on: [Push]
+jobs:
+  Explore-Github-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "This Job was automatically triggered by a ${{ github.event_name }} event."
