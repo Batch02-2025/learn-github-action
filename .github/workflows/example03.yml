@@ -1,0 +1,10 @@
+name: Example Workflow 03
+on: [workflow_dispatch]
+jobs:
+  container-test-job:
+    runs-on: self-hosted
+    container:
+      image: docker.io/rkalluru/learnk8s:rhel9-bare
+      steps:
+        - name: Just hello world
+          run: echo "Hello World"
