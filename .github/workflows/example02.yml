@@ -1,0 +1,27 @@
+name: Example Workflow 02
+on:
+  workflow_dispatch:
+    inputs:
+      loglevel:
+        description: 'Log Level'
+        required: true
+        default: 'warning'
+        type: choice
+        options:
+          - info
+          - warnings
+          - debug
+          - error
+      print_tags:
+        description: 'Print Tags to STDOUT'
+        required: true
+        type: boolean
+      tags:
+        description: 'Test scenario tags'
+        required: true
+        type: string
+jobs:
+  Explore-Github-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Tags- ${{ inputs.tags }} loglevel- ${{ inputs.loglevel }}"
