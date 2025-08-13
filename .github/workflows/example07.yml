@@ -6,5 +6,4 @@ jobs:
   test1:
     runs-on: ubuntu-latest
     steps:
-      - run: |
-        echo "${{ job.container.id }}"
+      - run: echo "${{ job.container.id }}"
