@@ -1,0 +1,10 @@
+name: Example 08
+on: [push]
+jobs:
+  Test1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Failing Step
+        id: demo
+        run: exit 1
+        if: ${{ failure() && steps.demo.conclusion == 'failure' }}
