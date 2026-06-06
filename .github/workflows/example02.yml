@@ -1,4 +1,4 @@
-name: Example Workflow 02
+name: Example Workflow 02 - 2026
 on:
   workflow_dispatch:
     inputs:
