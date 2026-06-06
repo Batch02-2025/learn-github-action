@@ -1,4 +1,4 @@
-name: Example 08
+name: Example 08 - 2026
 on: [push]
 jobs:
   Test1:
