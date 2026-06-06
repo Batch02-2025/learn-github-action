@@ -1,5 +1,5 @@
 # Fail a pipeline
-name: Example Workflow 07
+name: Example Workflow 07 - 2026
 on: [push]
 jobs:
   # Sequential Job
