@@ -1,4 +1,4 @@
-name: Example Workflow 06
+name: Example Workflow 06 - 2026
 on: [push]
 jobs:
   # Sequential Job
